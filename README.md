@@ -6,24 +6,21 @@
 
 A simple replacement for the default text field. Use this as a starting template when creating your own text field plug-in.
 
-## Features
+## Default SurveyCTO feature support
 
-* Supports the `text` field type.
-* Supports the following SurveyCTO field properties:
-
-    * Default values
-    * Constraint messages
-    * Required messages
-    * Read only
-    * media:image
-    * media:audio
-    * media:video
-
-* Supports the following SurveyCTO appearances:
-
-    * `numbers`
-    * `numbers_decimal`
-    * `numbers_phone`
+| Feature / Property | Support |
+| --- | --- |
+| Supported field type(s) | `text`|
+| Default values | Yes |
+| Custom constraint message | Yes |
+| Custom required message | Yes |
+| Read only | Yes |
+| media:image | Yes |
+| media:audio | Yes |
+| media:video | Yes |
+| `numbers` appearance | Yes |
+| `numbers-decimal` appearance | Yes |
+| `numbers-phone` appearance | Yes |
 
 ## How to use
 
