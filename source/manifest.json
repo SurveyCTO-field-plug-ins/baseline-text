@@ -1,0 +1,9 @@
+{
+	"name" : "Basic text field",
+	"author" : "Dobility",
+	"version": "1.0",
+	"supportedFieldTypes": ["text"],
+	"html": "field.html",
+	"css": "field.css",
+	"js": "field.js"
+}
