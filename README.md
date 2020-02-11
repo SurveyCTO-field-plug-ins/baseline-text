@@ -12,9 +12,9 @@ A simple replacement for the default text field. Use this as a starting template
 | --- | --- |
 | Supported field type(s) | `text`|
 | Default values | Yes |
-| Custom constraint message | No |
-| Custom required message | No |
-| Read only | Yes |
+| Constraint message | Uses default behavior |
+| Required message | Uses default behavior |
+| Read only | Yes *(shows the current value, if present)* |
 | media:image | Yes |
 | media:audio | Yes |
 | media:video | Yes |

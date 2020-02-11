@@ -2,11 +2,26 @@
 
 <div class="hint default-hint-text-size">{{{HINT}}}</div>
 
+<!-- If the field is marked read only, then only show the input box if there is a current answer. -->
+{{#READONLY}}
+    {{#CURRENT_ANSWER}}
+    <input 
+        type="text" 
+        value="{{CURRENT_ANSWER}}" 
+        id="text-field" 
+        class="response default-answer-text-size" 
+        readonly
+    />
+    {{/CURRENT_ANSWER}}
+{{/READONLY}}
+
+<!-- if the field is not marked read only, show the input box always. -->
+{{^READONLY}}
 <input 
     type="text" 
     value="{{CURRENT_ANSWER}}" 
     id="text-field" 
     class="response default-answer-text-size" 
     placeholder="Your answer here..." 
-    {{#READONLY}}readonly{{/READONLY}} 
 />
+{{/READONLY}}
