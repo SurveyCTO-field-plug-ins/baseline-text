@@ -1,5 +1,20 @@
 <div class="label default-question-text-size">{{{LABEL}}}</div>
 
+<!-- If there is an image specified in the media_image column, show it here -->
+{{#MEDIAIMAGE}}
+    {{MEDIAIMAGE}}
+{{/MEDIAIMAGE}}
+
+<!-- If there is audio specified in the media_audio column, show it here -->
+{{#MEDIAAUDIO}}
+    {{MEDIAAUDIO}}
+{{/MEDIAAUDIO}}
+
+<!-- If there is a video specified in the media_video column, show it here -->
+{{#MEDIAVIDEO}}
+    {{MEDIAVIDEO}}
+{{/MEDIAVIDEO}}
+
 <div class="hint default-hint-text-size">{{{HINT}}}</div>
 
 <!-- If the field is marked read only, then only show the input box if there is a current answer. -->
