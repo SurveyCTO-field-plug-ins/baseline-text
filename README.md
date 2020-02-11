@@ -12,8 +12,8 @@ A simple replacement for the default text field. Use this as a starting template
 | --- | --- |
 | Supported field type(s) | `text`|
 | Default values | Yes |
-| Custom constraint message | Yes |
-| Custom required message | Yes |
+| Custom constraint message | No |
+| Custom required message | No |
 | Read only | Yes |
 | media:image | Yes |
 | media:audio | Yes |

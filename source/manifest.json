@@ -1,6 +1,8 @@
 {
 	"name" : "Basic text field",
 	"author" : "Dobility",
-	"version": "2.0.4",
-	"supportedFieldTypes": ["text"]
+	"version": "2.0.5",
+	"supportedFieldTypes": ["text"],
+	"hideDefaultRequiredMessage": false,
+	"hideDefaultConstraintMessage": false
 }
