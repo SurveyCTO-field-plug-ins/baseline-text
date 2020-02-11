@@ -1,11 +1,20 @@
 .label {
     /* add style rules here to change how the label appears */
+    margin: .75rem 0;
 }
 
 .hint {
     /* add style rules here to change how the hint appears */
+    margin: .5rem 0;
+    color: rgba(0,0,0,.65);
+    font-style: italic;
 }
 
 .response {
     /* add style rules here to change how the response appears */
+    width: 100%;
+    margin: .5rem 0;
+    padding: .5rem;
+    border: 1px solid #047CC2;
+    box-sizing: border-box;
 }
