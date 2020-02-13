@@ -39,6 +39,8 @@ To create your own field plug-in using this as a template, follow these steps:
 
 ## More resources
 
-* You can find a **test form** in this repo here: [extras/test-form](extras/test-form).  This form will help you compare your text field plug-in to the default text field.
+* **Test form**  
+You can find a form definition in this repo here: [extras/test-form](extras/test-form). This form will help you compare your text field plug-in to the default text field. [Click here for instructions](/extras/test-form/README.md).
 
-* More instructions for developing and using field plug-ins can be found here: [https://github.com/surveycto/Field-plug-in-resources](https://github.com/surveycto/Field-plug-in-resources)
+* **Developer documentation**  
+More instructions for developing and using field plug-ins can be found here: [https://github.com/surveycto/Field-plug-in-resources](https://github.com/surveycto/Field-plug-in-resources)
