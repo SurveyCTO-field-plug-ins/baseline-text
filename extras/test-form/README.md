@@ -18,4 +18,5 @@ As you go through the form, you can see the way each case is rendered, first in 
     [test_image.jpeg](test_image.jpeg)  
     [test_video.mp4](test_video.mp4)
 1. Attach the field plug-in to that form.  
-    [basic-text-field.fieldplugin.zip](/../../basic-text-field.fieldplugin.zip) 
+    [basic-text-field.fieldplugin.zip](/../../)  
+    *Note: this test form expects the plug-in name to be basic-text-field.fieldplugin.zip. If you rename the plug-in, you will need to edit the form definition to look for the new plug-in.*
