@@ -1,6 +1,6 @@
-# basic-text-field
+# Baseline text field
 
-![Default appearance for the 'basic text field' field plug-in](extras/preview.jpg)
+![Default appearance for the 'baseline-text' field plug-in](extras/preview.jpg)
 
 ## Description
 
@@ -24,7 +24,7 @@ A simple replacement for the default text field. Use this as a starting template
 
 ## How to use
 
-**To use this plug-in as-is**, just download the [basic-text-field.fieldplugin.zip](basic-text-field.fieldplugin.zip) file from this repo, and attach it to your form.
+**To use this plug-in as-is**, just download the [baseline-text.fieldplugin.zip](baseline-text.fieldplugin.zip) file from this repo, and attach it to your form.
 
 To create your own field plug-in using this as a template, follow these steps:
 
