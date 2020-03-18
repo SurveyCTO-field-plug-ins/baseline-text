@@ -21,9 +21,6 @@ function setInputFilter(textbox, inputFilter) {
         }
     }
 
-    // Truncate to 15 chars.
-    textbox.value = textbox.value.substring(0, 15);
-
     // Apply restriction when typing, copying/pasting, dragging-and-dropping, etc.
     textbox.addEventListener("input", restrictInput);
     textbox.addEventListener("keydown", restrictInput);
