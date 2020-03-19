@@ -1,5 +1,35 @@
+// Detect platform
+var isWebCollect = (document.body.className.indexOf("web-collect") >= 0);
+var isAndroid = (document.body.className.indexOf("android-collect") >= 0);
+var isIOS = (document.body.className.indexOf("ios-collect") >= 0);
+
 // Find the input element
 var input = document.getElementById('text-field');
+
+// Restricts input for the given textbox to the given inputFilter.
+function setInputFilter(textbox, inputFilter) {
+    function restrictInput() {
+        if (inputFilter(this.value)) {
+            this.oldSelectionStart = this.selectionStart;
+            this.oldSelectionEnd = this.selectionEnd;
+            this.oldValue = this.value;
+        } else if (this.hasOwnProperty("oldValue")) {
+            this.value = this.oldValue;
+            this.setSelectionRange(this.oldSelectionStart, this.oldSelectionEnd);
+        } else {
+            this.value = "";
+        }
+    }
+
+    // Apply restriction when typing, copying/pasting, dragging-and-dropping, etc.
+    textbox.addEventListener("input", restrictInput);
+    textbox.addEventListener("keydown", restrictInput);
+    textbox.addEventListener("keyup", restrictInput);
+    textbox.addEventListener("mousedown", restrictInput);
+    textbox.addEventListener("mousedown", restrictInput);
+    textbox.addEventListener("contextmenu", restrictInput);
+    textbox.addEventListener("drop", restrictInput);
+}
 
 // Define what happens when the user attempts to clear the response
 function clearAnswer() {
@@ -22,11 +52,54 @@ input.oninput = function() {
 }
 
 // check for standard appearance options and apply them
-if ( fieldProperties.APPEARANCE.includes("numbers_phone") == true ) {
+if ( fieldProperties.APPEARANCE.includes("numbers_phone") === true ) {
     input.type = "tel";
-} else if ( fieldProperties.APPEARANCE.includes("numbers_decimal") == true ) {
+} else if ( fieldProperties.APPEARANCE.includes("numbers_decimal") === true ) {
     input.pattern = "[0-9]*";
-    input.inputmode = "numeric";
-} else if ( fieldProperties.APPEARANCE.includes("numbers") == true ) {
+
+    // Set/remove the "inputmode".
+    function setInputMode(attributeValue) {
+        if (attributeValue === null) {
+            input.removeAttribute("inputmode");
+        } else {
+            input.setAttribute("inputmode", attributeValue);
+        }
+    }
+
+    setInputMode("numeric");
+
+    // For iOS, we'll default the inputmode to "numeric" (as defined above), unless some specific value is
+    // passed as plug-in parameter.
+    if (isIOS) {
+        var inputModeIOS = getPluginParameter("inputmode-ios");
+        if (inputModeIOS !== undefined) {
+            setInputMode(inputModeIOS);
+        }
+    }
+    // For Android, we'll default the inputmode to "numeric" (as defined above),
+    // unless some specific value is passed as plug-in parameter.
+    else if (isAndroid) {
+        var inputModeAndroid = getPluginParameter("inputmode-android");
+        if (inputModeAndroid !== undefined) {
+            setInputMode(inputModeAndroid);
+        }
+    }
+    // For WebCollect, we'll default the inputmode to "numeric" (as defined above),
+    // unless some specific value is passed as plug-in parameter.
+    else if(isWebCollect) {
+        var inputModeWebCollect = getPluginParameter("inputmode-web");
+        if (inputModeWebCollect !== undefined) {
+            setInputMode(inputModeWebCollect);
+        }
+    }
+
+    // If the field is not marked as readonly, then restrict input to decimal only.
+    if(!fieldProperties.READONLY) {
+        setInputFilter(input, function (value) {
+            return /^-?\d*[.,]?\d*$/.test(value);
+        });
+    }
+
+} else if ( fieldProperties.APPEARANCE.includes("numbers") === true ) {
     input.type = "number";
 } 
