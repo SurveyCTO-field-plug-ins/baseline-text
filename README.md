@@ -37,6 +37,13 @@ To create your own field plug-in using this as a template, follow these steps:
 1. Rename the .zip file to *yourpluginname*.fieldplugin.zip (replace *yourpluginname* with the name you want to use for your plug-in).
 1. You may then attach your new .fieldplugin.zip file to your form as normal.
 
+**Note about the `numbers_decimal` appearance on iOS:**  
+iOS has a less-consistent way of determining which on-screen keyboard to display. If you are using this plug-in with the `numbers_decimal` appearance, you should test your form on the actual iOS device that you plan on using. If the wrong keyboard appears (for example, if there is no decimal button available), you may supply an optional parameter to the plug-in to set the keyboard type manually. 
+
+| Parameter key | Parameter value |
+| --- | --- |
+| `ios-inputmode` | Possible values: `none`, `text`, `decimal`, `numeric`, `tel`, `search`, `email`, `url`. [Click here for more information about the inputmode attibute.](https://css-tricks.com/everything-you-ever-wanted-to-know-about-inputmode)|
+
 ## More resources
 
 * **Test form**  
