@@ -38,7 +38,7 @@ To create your own field plug-in using this as a template, follow these steps:
 1. You may then attach your new .fieldplugin.zip file to your form as normal.
 
 **Note about the `numbers_decimal` appearance on iOS:**  
-iOS has a less-consistent way of determining which on-screen keyboard to display. If you are using this plug-in with the `numbers_decimal` appearance, you should test your form on the actual iOS device that you plan on using. If the wrong keyboard appears (for example, if there is no decimal button available), you may supply an optional parameter to the plug-in to set the keyboard type manually. 
+iOS has a less-consistent way of determining which on-screen keyboard to display than Android. If you are using this plug-in with the `numbers_decimal` appearance, you should test your form on the actual iOS device that you plan on using. If the wrong keyboard appears (for example, if there is no decimal button available), you may supply an optional parameter to the plug-in to set the keyboard type manually. 
 
 | Parameter key | Parameter value |
 | --- | --- |
