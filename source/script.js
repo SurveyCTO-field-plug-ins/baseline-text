@@ -35,8 +35,13 @@ function setInputFilter(textbox, inputFilter) {
 function unEntity(str){
     return str.replace(/&lt;/g, '<').replace(/&gt;/g, '>');
 }
-document.querySelector(".label").innerHTML = unEntity(fieldProperties.LABEL);
-document.querySelector(".hint").innerHTML = unEntity(fieldProperties.HINT);
+if (fieldProperties.LABEL) {
+    document.querySelector(".label").innerHTML = unEntity(fieldProperties.LABEL);
+}
+if (fieldProperties.HINT) {
+    document.querySelector(".hint").innerHTML = unEntity(fieldProperties.HINT);
+}
+
 
 
 // Define what happens when the user attempts to clear the response
