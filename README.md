@@ -22,6 +22,13 @@ A simple replacement for the default text field. Use this as a starting template
 | `numbers-decimal` appearance | Yes |
 | `numbers-phone` appearance | Yes |
 
+## Expanded feature support
+
+In addition to supporting the default SurveyCTO features listed above, this field plug-in offers the following expanded functionality:
+
+1. Support for HTML in field references  
+    If you reference another field's value in either the field *label* or field *hint*, and that referenced value contains HTML, the HTML will be correctly rendered.
+
 **Note about the `numbers_decimal` appearance on iOS:**  
 iOS has a less-consistent way of determining which on-screen keyboard to display than Android. If you are using this plug-in with the `numbers_decimal` appearance, you should test your form on the actual iOS device that you plan on using. If the wrong keyboard appears (for example, if there is no decimal button available), you may supply an optional parameter to the plug-in to set the keyboard type manually. 
 
