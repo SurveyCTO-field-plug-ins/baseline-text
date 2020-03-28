@@ -6,6 +6,8 @@
 
 A simple replacement for the default text field. Use this as a starting template when creating your own text field plug-in.
 
+[![Download now](extras/download-button.png)](https://github.com/surveycto/baseline-text/raw/master/baseline-text.fieldplugin.zip)
+
 ## Default SurveyCTO feature support
 
 | Feature / Property | Support |
