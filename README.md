@@ -4,7 +4,7 @@
 
 ## Description
 
-A simple replacement for the default text field. Use this as a starting template when creating your own text field plug-in.
+A simple replacement for the default text field, plus a few improvements (see below). You can either download and use this as-is, or you can use it as a starting template when creating your own field plug-in for a text field.
 
 [![Download now](extras/download-button.png)](https://github.com/surveycto/baseline-text/raw/master/baseline-text.fieldplugin.zip)
 
@@ -40,7 +40,7 @@ iOS has a less-consistent way of determining which on-screen keyboard to display
 
 ## How to use
 
-**To use this plug-in as-is**, just download the [baseline-text.fieldplugin.zip](baseline-text.fieldplugin.zip) file from this repo, and attach it to your form.
+**To use this plug-in as-is**, just download the [baseline-text.fieldplugin.zip](https://github.com/surveycto/baseline-text/raw/master/extras/test-form/test-form-package.zip) file from this repo, and attach it to your form.
 
 To create your own field plug-in using this as a template, follow these steps:
 
@@ -56,7 +56,14 @@ To create your own field plug-in using this as a template, follow these steps:
 ## More resources
 
 * **Test form**  
-You can find a form definition in this repo here: [extras/test-form](extras/test-form). This form will help you compare your text field plug-in to the default text field. [Click here for instructions](/extras/test-form/README.md).
+This form will help you explore the differences between this field plug-in and the default text field.  
+[Download test form package](https://github.com/surveycto/baseline-text/raw/master/extras/test-form/test-form-package.zip)  
+[Instructions for test form](/extras/test-form/README.md)
 
 * **Developer documentation**  
-More instructions for developing and using field plug-ins can be found here: [https://github.com/surveycto/Field-plug-in-resources](https://github.com/surveycto/Field-plug-in-resources)
+Instructions and resources for developing your own field plug-ins.  
+[https://github.com/surveycto/Field-plug-in-resources](https://github.com/surveycto/Field-plug-in-resources)
+
+* **User documentation**  
+How to get started using field plug-ins in your SurveyCTO form.  
+[https://docs.surveycto.com/02-designing-forms/03-advanced-topics/06.using-field-plug-ins.html](https://docs.surveycto.com/02-designing-forms/03-advanced-topics/06.using-field-plug-ins.html)
