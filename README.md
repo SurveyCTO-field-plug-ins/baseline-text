@@ -30,6 +30,8 @@ In addition to supporting the default SurveyCTO features listed above, this fiel
 
 1. Support for HTML in field references  
     If you reference another field's value in either the field *label* or field *hint*, and that referenced value contains HTML, the HTML will be correctly rendered.
+1. Better support for RTL languages  
+    The field label, hint, and input will now be justified to the right when they contain an RTL language.
 
 **Note about the `numbers_decimal` appearance on iOS:**  
 iOS has a less-consistent way of determining which on-screen keyboard to display than Android. If you are using this plug-in with the `numbers_decimal` appearance, you should test your form on the actual iOS device that you plan on using. If the wrong keyboard appears (for example, if there is no decimal button available), you may supply an optional parameter to the plug-in to set the keyboard type manually. 
