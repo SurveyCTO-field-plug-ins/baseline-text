@@ -4,17 +4,17 @@
 
 ## Description
 
-A simple replacement for the default text field, plus a few improvements (see below). You can either download and use this as-is, or you can use it as a starting template when creating your own field plug-in for a text field.
+A simple replacement for the default *text* field, plus a few improvements (see below). You can either download and use this as-is, or you can use it as a starting template when creating your own field plug-in for a *text* field.
 
 [![Download now](extras/download-button.png)](https://github.com/surveycto/baseline-text/raw/master/baseline-text.fieldplugin.zip)
 
 ### Features
 
-In addition to supporting the default SurveyCTO features listed above, this field plug-in offers the following expanded functionality:
+In addition to supporting the default SurveyCTO features listed below, this field plug-in offers the following expanded functionality:
 
-1. Support for HTML in field references  
+1. **Support for HTML in field references** <br>
     If you reference another field's value in either the field *label* or field *hint*, and that referenced value contains HTML, the HTML will be correctly rendered.
-1. Better support for RTL languages  
+1. **Better support for RTL languages** <br>
     The field label, hint, and input will now be justified to the right when they contain an RTL language.
 
 ### Data format
@@ -25,7 +25,7 @@ This field plug-in requires the `text` field type.
 
 ### Getting started
 
-**To use this plug-in as-is**, just download the [baseline-text.fieldplugin.zip](https://github.com/surveycto/baseline-text/raw/master/extras/test-form/test-form-package.zip) file from this repo, and attach it to your form. For more details about using field plug-ins, please read the [user documentation](https://docs.surveycto.com/02-designing-forms/03-advanced-topics/06.using-field-plug-ins.html).
+**To use this plug-in as-is**, just download the [baseline-text.fieldplugin.zip](https://github.com/surveycto/baseline-text/raw/master/extras/test-form/test-form-package.zip) file from this repo, specify this field plug-in as a custom field appearance in the form design (like in the [test form](https://github.com/surveycto/baseline-text/raw/master/extras/test-form/test-form-package.zip)), and attach it to your form. For more details about using field plug-ins, please read the [user documentation](https://docs.surveycto.com/02-designing-forms/03-advanced-topics/06.using-field-plug-ins.html).
 
 **To create your own** field plug-in using this as a template, follow these steps:
 
