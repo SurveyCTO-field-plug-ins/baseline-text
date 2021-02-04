@@ -44,7 +44,12 @@
     value="{{CURRENT_ANSWER}}" 
     id="text-field" 
     class="response default-answer-text-size" 
-    placeholder="{{QUESTION_PLACEHOLDER_LABEL}}" 
+    {{#QUESTION_PLACEHOLDER_LABEL}}
+      placeholder="{{QUESTION_PLACEHOLDER_LABEL}}"
+    {{/QUESTION_PLACEHOLDER_LABEL}}
+    {{^QUESTION_PLACEHOLDER_LABEL}}
+      placeholder="Your answer here..."
+    {{/QUESTION_PLACEHOLDER_LABEL}}
     dir="auto"
 />
 {{/READONLY}}
