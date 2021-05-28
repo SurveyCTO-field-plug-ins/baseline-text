@@ -61,7 +61,7 @@ iOS has a less-consistent way of determining which on-screen keyboard to display
 
 | Parameter key | Parameter value |
 | --- | --- |
-| `ios-inputmode` | Possible values: `none`, `text`, `decimal`, `numeric`, `tel`, `search`, `email`, `url`. [Click here for more information about the inputmode attibute.](https://css-tricks.com/everything-you-ever-wanted-to-know-about-inputmode)|
+| `ios-inputmode` | Possible values: `none`, `text`, `decimal`, `numeric`, `tel`, `search`, `email`, `url`. [Click here for more information about the inputmode attribute.](https://css-tricks.com/everything-you-ever-wanted-to-know-about-inputmode)|
 
 ## More resources
 
