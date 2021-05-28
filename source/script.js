@@ -33,15 +33,6 @@ function setInputFilter (textbox, inputFilter) {
   textbox.addEventListener('drop', restrictInput)
 }
 
-// Set/remove the 'inputmode'.
-function setInputMode (attributeValue) {
-  if (attributeValue === null) {
-    input.removeAttribute('inputmode')
-  } else {
-    input.setAttribute('inputmode', attributeValue)
-  }
-}
-
 // If the field label or hint contain any HTML that isn't in the form definition, then the < and > characters will have been replaced by their HTML character entities, and the HTML won't render. We need to turn those HTML entities back to actual < and > characters so that the HTML renders properly. This will allow you to render HTML from field references in your field label or hint.
 function unEntity (str) {
   return str.replace(/&lt;/g, '<').replace(/&gt;/g, '>')
@@ -78,6 +69,15 @@ if (fieldProperties.APPEARANCE.includes('numbers_phone') === true) {
   input.type = 'tel'
 } else if (fieldProperties.APPEARANCE.includes('numbers_decimal') === true) {
   input.pattern = '[0-9]*'
+
+  // Set/remove the 'inputmode'.
+  function setInputMode (attributeValue) {
+    if (attributeValue === null) {
+      input.removeAttribute('inputmode')
+    } else {
+      input.setAttribute('inputmode', attributeValue)
+    }
+  }
 
   setInputMode('numeric')
 
