@@ -25,7 +25,6 @@
 
 <!-- If the field is marked read only, then only show the input box if there is a current answer. -->
 {{#READONLY}}
-    {{#CURRENT_ANSWER}}
     <input 
         type="text" 
         value="{{CURRENT_ANSWER}}" 
@@ -33,8 +32,8 @@
         class="response default-answer-text-size" 
         dir="auto"
         readonly
+        {{^CURRENT_ANSWER}}style="display:none"{{/CURRENT_ANSWER}}
     />
-    {{/CURRENT_ANSWER}}
 {{/READONLY}}
 
 <!-- if the field is not marked read only, show the input box always. -->
