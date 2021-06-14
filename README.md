@@ -51,8 +51,8 @@ For more information about developing your own field plug-ins, please read the [
 | media:audio | Yes |
 | media:video | Yes |
 | `numbers` appearance | Yes |
-| `numbers-decimal` appearance | Yes |
-| `numbers-phone` appearance | Yes |
+| `numbers_decimal` appearance | Yes |
+| `numbers_phone` appearance | Yes |
 
 ### Parameters
 
